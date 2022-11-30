@@ -35,21 +35,29 @@
 		  url('../fonts/montserrat-v25-latin-800.woff') format('woff'), /* Modern Browsers */
 }
 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
 
 *{
 	box-sizing: border-box;
 }
+
+
+
 html{
 	font-family: 'Montserrat', sans-serif;
 }
+
 a{
 	text-decoration: none;
 }
-ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
+
 
 img{
 	max-width: 100%;
@@ -140,6 +148,7 @@ h2{
 
 
 .slider-content__btn{
+	display: inline-block;
 	padding: 25px 39px;
 	border-radius: 16px;
 	background-color:#FF9900;
@@ -187,7 +196,7 @@ h2{
 
 .about-excerpt__text{
 	width: 433px;
-	margin-right: 385px;
+	margin-right: 160px;
 	line-height: 32px;
 }
 
@@ -199,5 +208,23 @@ h2{
 	border-radius: 16px;
 }
 
+.about-block__item{
+	display: flex;
+}
+.about-block__img{
+	display: block;
+	width: 190px;
+	height: 165px;
+	background-size: contain; /* Занимает 100% ширины блока */
+	background-repeat: no-repeat;
+	background-color: transparent;/* Прозрачный цвет фона */
+	background-position: left top;	
+}
 
+.about-block__img--square{
+	background-image: url(../img/square.png);
+}
 
+.about-block__img--circle{
+	background-image: url(../img/circle.png);
+}
