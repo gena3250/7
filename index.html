@@ -112,7 +112,7 @@
 				Как мы работаем
 			</h2>
 			<ul class="mywork__list">
-				<li class="mywork__item">1 шаг</li>
+				<li class="mywork__item mywork__item--link">1 шаг</li>
 				<li class="mywork__item">2 шаг</li>
 				<li class="mywork__item">3 шаг</li>
 				<li class="mywork__item">4 шаг</li>
@@ -121,20 +121,22 @@
 				<div class="mywork-block__left">
 					<h3 class="mywork-title">Проводим консультацию</h3>
 					<p class="mywork-description">
-						Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
-						спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
-						рассмотрены соответствующими инстанциями.
-						А также представители современных социальных резервов, инициированные исключительно синтетически,
-						ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
-						с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
-						Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно
-						интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+						Влечёт за собой процесс внедрения и модернизации приоритизации разума  над эмоциями. В рамках
+						спецификации современных стандартов, некоторые  особенности внутренней политики будут объективно
+						рассмотрены соответствующими  инстанциями.<p>
+					<p class="mywork-description">
+						А также представители современных социальных резервов, инициированные  исключительно синтетически,
+						ограничены исключительно образом мышления. Являясь  всего лишь частью общей картины, реплицированные
+						с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. 
+						Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают  чрезвычайно
+						интересные особенности картины в целом, однако конкретные выводы,  разумеется, призваны к ответу.
 					</p>
-					<a href="" class="mywork-more">Подробнее</a>
-					<a href="" class="mywork-contract">Договор</a>
+					<div class="mywork-link">
+						<a href="" class="mywork-more mywork-link__style">Подробнее</a>
+						<a href="" class="mywork-contract mywork-link__style">Договор</a>
+					</div>
 				</div>
 				<div class="mywork-block__right">
-					dghdgjthmk
 				</div>
 			</div>
 		</div>
@@ -144,8 +146,69 @@
 
 
 
-	<section class="section-padding"></section>
-	<footer class="section-padding"></footer>
+	<section class="section-what">
+		<div class="container">
+			<h2 class="what-heading">
+				Часто задаваемые вопросы
+			</h2>
+			<ul class="what-heading__list">
+				<li class="what-item what-item__border">
+					<p class="what-text">Из чего формируется конечная стоимость проекта?</p><img class="what-item__img" src="../img/x.svg"></img>
+				</li>
+				<li class="what-item">
+					<p class="what-text">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</p><img class="what-item__img" src="../img/x.svg"></img>
+				</li>
+				<li class="what-item">
+					<p class="what-text">Я выбираю между разными компаниями. В чём ваше отличие?</p><img class="what-item__img" src="../img/x.svg"></img>
+				</li>
+				<li class="what-item">
+					<p class="what-text">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</p><img class="what-item__img" src="../img/x.svg"></img>
+				</li>
+				<li class="what-item">
+					<p class="what-text">Могу ли я вернуть деньги на каком-либо из этапов работ?</p><img class="what-item__img" src="../img/x.svg"></img>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="footer section-padding">
+		<div class="container">
+			<div class="footer-block">
+			<div class="footer-left">
+				<img class="footer-logo" src="/img/Logo1.svg" alt="">
+				<ul class="footer-list">
+					<li class="footer__item"><a class="footer-item__link" href="#">О нас</a></li>
+					<li class="footer__item"><a class="footer-item__link" href="#">Проекты</a></li>
+					<li class="footer__item"><a class="footer-item__link" href="#">Отзывы</a></li>
+					<li class="footer__item"><a class="footer-item__link" href="#">Договор оферты</a></li>
+					<li class="footer__item"><a class="footer-item__link" href="#">Договор подряда</a></li>
+					<li class="footer__item"><a class="footer-item__link" href="#">Конфиденциальность</a></li>
+					<li class="footer__item"><a class="footer-item__link" href="#">Партнёрское соглашение</a></li>
+				</ul>
+				<div class="footer-icon">
+					<a class="footer-icon__link" href="#"><span class="footer-icon__img footer-icon__img--ok"></span></a>
+					<a class="footer-icon__link" href="#"><span class="footer-icon__img footer-icon__img--vk"></span></a>
+				</div>
+			</div>
+
+			<div class="footer-center">
+				<h2 class="footer-titel">
+					Оставить заявку
+				</h2>
+				<form class="footer-form" action="" method="post">
+					<input class="footer-form__input footer-form__input--fio" type="text" name="fio" placeholder="Фамилия, имя и отчество*" required >
+					<input class="footer-form__input footer-form__input--mail" type="email" name="mail" value="Email*" required>
+					<textarea class="footer-form__input footer-form__input--text" type="text" name="text" cols="60"rows="60">Сообщение</textarea>
+					<input class="form-submit" type="submit" value="Отправить данные">
+				</form>
+			</div>
+			<div class="footer-right">
+				Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация 
+				с широким активом обеспечивает широкому кругу (специалистов) участие 
+				в формировании стандартных подходов.
+			</div>
+		</div>
+		</div>
+	</footer>
 </body>
 
 </html>
