@@ -260,8 +260,7 @@ border-bottom: 2px solid #E1670E;
 }
 
 .about-block__left{
-	max-width:50%;
-	/* height: 100%; */
+	width:50%;
 	margin-right: 32px;
 	background-image: url(../img/Rectangle.jpg);
 	background-repeat: no-repeat;
@@ -272,9 +271,11 @@ border-bottom: 2px solid #E1670E;
 
 }
 .about-excerpt{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	margin-top: 426px ;
 	padding: 50px;
-	display: flex;
 	background:rgba(0, 0, 0, 0.5);
 	border-radius: 32px;
 	color: #fff;
@@ -289,7 +290,6 @@ border-bottom: 2px solid #E1670E;
 
 .about_excerpt__link{
 	display: inline-block;
-	margin: 18px 0;
 	padding: 19px 38px;
 	background: rgba(0, 0, 0, 0.5);
 	border: 3px solid #FF9900;
@@ -416,7 +416,6 @@ border-bottom: 2px solid #E1670E;
 }
 
 .mywork-description{
-	letter-spacing: 1.3px;
 	font-size: 16px;
 	line-height: 32px;
 }
@@ -690,15 +689,61 @@ border-bottom: 2px solid #E1670E;
 
 @media(max-width:1920px){
 	.header__logo{
-		margin-right: 0px;
+		margin-right: 20px;
 	}
 	.nav{
-		margin-right: 0px;
+		margin-right: 20px;
+	}
+	.slider-content{
+		padding-right: 400px;
+	}
+	.about-block__left{
+		position: relative;
+	}
+	.about-excerpt{
+		position: absolute;
+		bottom: 0;
+	}
+	.about-excerpt__text{
+		margin-right: 30px;
+	}
+	
+	.about-block__right{
+		max-width: 50%;
+	}
+	.footer-left{
+		margin-right: 20px;
+	}
+	.footer-center{
+		margin-right: 20px;
 	}
 }
 
+@media(max-width:1366px){
+	
+	.slider-content{
+		padding-right: 200px;
+	}
+	.about-block__item{
+		padding-right: 60px;
+	}
+	.mywork-block__left {
+		margin-right: 60px;
+  }
+	.mywork-block__right{
+		min-width: 436px;
+	}
 
-@media(max-width:1024px){
+	.mywork-description {
+		line-height: 24px;
+	
+} 
+
+
+@media(max-width:1024px){	
+	.header__logo{
+		margin-right: 0;
+	}
 	.container{
 		padding-left: 50px;
 		padding-right: 50px;
@@ -730,9 +775,13 @@ border-bottom: 2px solid #E1670E;
 		margin-top: 60px;
 	}	
 	.about-block__left{
-		max-width: 100%;
+		width: 100%;
+		height: 640px;
 		margin-right: 0;
 		margin-bottom: 32px;
+	}
+	.about-block__right{
+		max-width: 100%;
 	}
 	.mywork-block__left
 	{
@@ -921,7 +970,6 @@ border-bottom: 2px solid #E1670E;
 	}
 
 	.mywork-description {
-		letter-spacing: 0;
 		font-size: 14px;
 		line-height: 28px;
 	}
