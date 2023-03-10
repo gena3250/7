@@ -359,7 +359,6 @@ border-bottom: 2px solid #E1670E;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 32px;
-	height: 128px;
 }
 
 
@@ -735,9 +734,9 @@ border-bottom: 2px solid #E1670E;
 	}
 
 	.mywork-description {
-		line-height: 24px;
-	
+		line-height: 24px;	
 } 
+}
 
 
 @media(max-width:1024px){	
@@ -811,12 +810,25 @@ border-bottom: 2px solid #E1670E;
 		display: none;
 	}
 }
-
+@media(max-width:924px){
+	.mywork-block__left{
+		margin-right: 30px;
+	}
+	.mywork-more{
+		margin-right: 16px;
+	}
+	.mywork-block__right{
+		min-width: 45%;
+	}
+}
 @media(max-width:768px){
 	.about-excerpt__text{
 		margin-right: 47px;
 	}
-
+	.about-block__img{
+		width: 114px;
+		height: 99px;
+	}
 	.mywork__list{
 		justify-content: space-between;
 
@@ -834,7 +846,7 @@ border-bottom: 2px solid #E1670E;
 
 	.mywork-block__right{
 		height: 284px;
-		max-width: 668px;
+		max-width: 100%;
 		margin-top: 50px;
 	}
 
@@ -847,8 +859,78 @@ border-bottom: 2px solid #E1670E;
 	.footer-right{
 		margin-top: 50px;
 	}
+	.footer-center{
+		width: 100%;
+	}
 }
+@media(max-width:650px){
+	
+	
+	h2{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.container {
+		padding-left: 30px;
+		padding-right: 30px;
+  }
+  .header__logo{
+	width: 131px;
+	height: 42px;
+	}
+	.slider-content__heading {
+		font-size: 32px;
+		line-height: 36px;
+  }
+  .slider-content__btn {
+	padding: 16px 24px;
+	font-size: 16px;
+	line-height: 24px;
+}
+	.mywork__item:not(:last-child) {
+		margin-right: 50px;
+  }
+  .mywork-more{
+	padding: 16px 24px;
+  }
 
+  .mywork-contract{
+	padding: 16px 32px;
+  }
+	.about-block__left{
+		background-position: top;
+		width: 100%;
+	}
+	.about-excerpt{
+		flex-direction: column;
+		padding: 30px;
+	}
+	.about-excerpt__text{
+		margin-right: 0;
+		margin-bottom: 20px;
+		font-size: 14px;
+		line-height: 28px;
+	}
+	.about-block__item{
+		flex-direction: column;
+	}
+
+	.about-block__img{
+		margin-bottom: 30px;
+	}
+
+	.about-block__item {
+		padding-top: 35px;
+		padding-left: 30px;
+		padding-bottom: 35px;
+		padding-right: 45px;
+  }
+	
+	.what-text {
+		font-size: 14px;
+		line-height: 24px;
+  }
+}
 @media(max-width:320px){
 	h2{
 		font-size: 24px;
