@@ -894,6 +894,12 @@ border-bottom: 2px solid #E1670E;
 	padding: 16px 24px;
   }
 
+  .mywork-link__style {
+	font-size: 12px;
+	line-height: 15px;
+	border-radius: 8px;
+}
+
   .mywork-contract{
 	padding: 16px 32px;
   }
@@ -1004,7 +1010,7 @@ border-bottom: 2px solid #E1670E;
 
 	.about-block__right{
 		position: relative;
-		top: 220px;
+		top: 280px;
 	}
 
 	.about-block__item{
@@ -1038,7 +1044,6 @@ border-bottom: 2px solid #E1670E;
 
   .mywork-block__right {
 	height: 160px;
-	max-width: 290px;
 	margin-top: 0;
 	}
 	.mywork-block__left{
@@ -1058,11 +1063,6 @@ border-bottom: 2px solid #E1670E;
 
 	.mywork-more{
 		margin-right: 10px;
-	}
-	.mywork-link__style {
-		font-size: 12px;
-		line-height: 15px;
-		border-radius: 8px;
 	}
 	.section-what{
 		position: relative;
@@ -1092,9 +1092,6 @@ border-bottom: 2px solid #E1670E;
 		height: 42px;
 	}
 
-	.footer-center{
-		width: 290px;
-	}
 	.footer-form__input{
 		font-size: 14px;
 	}
